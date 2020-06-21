@@ -24,7 +24,7 @@ for url in urls:
 
 monitor_prices = dict(zip(monitors, prices))
 
-with open('monitors.csv', 'w', encoding='utf-8') as csv_file:
+with open('../monitors.csv', 'w', encoding='utf-8') as csv_file:
     writer = csv.writer(csv_file)
     for key, value in monitor_prices.items():
         writer.writerow([str(key), str(value)])
